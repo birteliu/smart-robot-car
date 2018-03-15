@@ -245,6 +245,12 @@ svg:not(:root) {
 		button {
 			border: 1px solid #f2f2f2;
 			margin: 0 7px 30px 5px;
+			&:hover {
+				border: 1px solid #F96018;
+				-webkit-transition: all ease-in-out .3s;
+      	-o-transition: all ease-in-out .3s;
+      	transition: all ease-in-out .3s;	
+			}
 			a {
 				color: #000;
 				&:hover {
@@ -329,6 +335,7 @@ svg:not(:root) {
 		}
 		p {
 			padding: 10px 15px;
+			line-height: 1.6;
 		}
 		.price {
 			padding: 0 15px;
@@ -368,6 +375,16 @@ svg:not(:root) {
 		li {
 			line-height: 2;
 			font-size: 1em;
+			a {
+				color: #F96018;
+				&:hover {
+					text-decoration: none;
+					color: #f09819;
+					-webkit-transition: all ease-in-out .4s;
+        	-o-transition: all ease-in-out .4s;
+        	transition: all ease-in-out .4s;
+				}
+			}
 		}
 	}
 	.go-top {
@@ -385,6 +402,7 @@ svg:not(:root) {
 			border-radius: 50%;
 			&:hover {
 				text-decoration: none;
+				cursor: pointer;
 				background-color: #ff5858;
 				-webkit-transition: all ease-in-out .4s;
       	-o-transition: all ease-in-out .4s;
