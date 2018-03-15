@@ -42,6 +42,7 @@ svg:not(:root) {
 }
 /**/
 .jumbotron {
+	background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
 	.logo {
 		width: 200px;
 		@media (max-width: 450px) {
@@ -124,25 +125,56 @@ svg:not(:root) {
 		}
 	}
 }
+.main-section {
+	padding: 10px 50px;
+	@media (min-width: 1300px) {
+				padding: 10px 0;
+   }
+	@media (max-width: 992px) {
+		padding: 10px 0;
+  }
+}
 .main-content {
 	padding-top: 15px;
-	.icon-car {
-			
+	.col-sm-2 {
+		padding: 0;
+    .icon-car {
+			@media (max-width: 992px) {
+				padding-top: 5px;
+    	}
+    	@media (max-width: 768px) {
+				display: none;
+    	}
+		}
 	}
+	
 	h5 {
-		line-height: 45px;
+		line-height: 40px;
 		color: #fff;
 		padding-left: 25px;
 		float: left;
 		font-size: 1.3em;
+		font-weight: normal;
+		@media (min-width: 1100px) {
+				line-height: 50px;
+    }
+    @media (max-width: 768px) {
+    	padding-left: 15px;
+    }
 	}
 	.title-bg {
 		 border-top-right-radius: 2px;
- 			border-bottom-right-radius: 2px;
- 			border-right: 33px solid transparent;
- 			border-top: 33px solid #EC6843;
- 			border-left: 33px solid #EC6843;
- 			border-bottom: 33px solid #EC6843;
+ 		 border-bottom-right-radius: 2px;
+ 		 border-right: 29px solid transparent;
+ 		 border-top: 29px solid #0d0e22;
+ 		 border-left: 29px solid #0d0e22;
+ 		 border-bottom: 29px solid #0d0e22;
+ 		 @media (min-width: 1100px) {
+				border-right: 35px solid transparent;
+ 				border-top: 35px solid #0d0e22;
+ 				border-left: 35px solid #0d0e22;
+ 				border-bottom: 35px solid #0d0e22;
+    	}
 	}
 	.video-container {
 		position: relative;
@@ -150,6 +182,8 @@ svg:not(:root) {
 		padding-top: 30px;
 		height: 0;
 		overflow: hidden;
+		margin: 20px 0;
+		border-radius: 5px;
 	}
 	.video-container iframe, .video-container object, .video-container embed {
 		position: absolute;
@@ -157,5 +191,152 @@ svg:not(:root) {
 		width: 100%;
 		height: 100%;
 	}
+	.word-content {
+		p {
+			line-height: 2;
+		}
+		h4 {
+			padding-top: 20px;
+			color: #f15e25;
+			line-height: 1.5;
+		}
+		img {
+			padding-bottom: 30px;
+		}
+		button {
+			border: 1px solid #f2f2f2;
+			margin: 0 7px 30px 5px;
+			a {
+				color: #000;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+		.small-buy {
+			padding: 10px 0;
+			h6 {
+				text-align: center;
+			}
+			img {
+				padding: 10px;
+			}
+			p {
+				text-align: center;
+				color: #F35B5B;
+				span {
+      		color: #000000;
+      		text-decoration: line-through;
+      		font-size: 80%;
+    		}
+			}
+		}
+		
+	}
 }
-
+.buy-content {
+	padding-top: 15px;
+	h5 {
+		line-height: 40px;
+		color: #fff;
+		padding-left: 25px;
+		float: left;
+		font-size: 1.3em;
+		font-weight: normal;
+		@media (min-width: 1100px) {
+				line-height: 50px;
+    }
+    @media (max-width: 768px) {
+    	padding-left: 15px;
+    }
+	}
+	.title-bg {
+		 border-top-right-radius: 2px;
+ 		 border-bottom-right-radius: 2px;
+ 		 border-right: 29px solid transparent;
+ 		 border-top: 29px solid #0d0e22;
+ 		 border-left: 29px solid #0d0e22;
+ 		 border-bottom: 29px solid #0d0e22;
+ 		 @media (min-width: 1100px) {
+				border-right: 35px solid transparent;
+ 				border-top: 35px solid #0d0e22;
+ 				border-left: 35px solid #0d0e22;
+ 				border-bottom: 35px solid #0d0e22;
+    	}
+	}
+	.buy-block {
+		margin-top: 30px;
+		border: 2px solid #EFEFEF;
+		padding: 0px;
+		.buy-slogan {
+			color: #fff;
+			padding: 15px;
+			margin: 0;
+			text-align: center;
+			font-size: 1.2em;
+			font-weight: normal;
+		}
+		.buy-title {
+			padding: 10px 15px 0 15px;
+			font-size: 1.1em;
+			line-height: 1.5;
+		}
+		img {
+			padding: 0px 15px;
+		}
+		p {
+			padding: 10px 15px;
+		}
+		.price {
+			padding: 0 15px;
+			text-align: center;
+			color: #F35B5B;
+			span {
+      	color: #000000;
+      	text-decoration: line-through;
+      	font-size: 80%;
+    	}
+		}
+		button {
+			padding: 15px 20%;
+			display: block;
+			margin: 20px auto;
+			border: none;
+			background-color: #FFD45C;
+			border-radius: 30px;
+			font-size: 1.1em;
+			font-weight: bold;
+			&:hover {
+				background-color: darken(#FFD45C, 15%);
+				-webkit-transition: all ease-in-out .4s;
+        -o-transition: all ease-in-out .4s;
+        transition: all ease-in-out .4s;
+			}
+			a {
+				color: #000;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	ul {
+		padding: 30px 0 0 30px;
+		@media (max-width: 992px) {
+    	padding-left: 20px;
+    }
+		li {
+			line-height: 2;
+			font-size: 1.1em;
+		}
+	}
+}
+footer {
+	background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+	img {
+		width: 200px;
+		display: block;
+		margin: 20px auto 0 auto;
+		padding: 20px;
+	}
+}
